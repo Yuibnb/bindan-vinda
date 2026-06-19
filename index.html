@@ -4,72 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bidan Vinda Ruspita, A.Md.Keb - Mitra Ibu & Anak Magetan</title>
-    
-    <meta name="theme-color" content="#f43f5e">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <meta name="apple-mobile-web-app-title" content="Bidan Vinda">
-    <link rel="apple-touch-icon" href="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
-    
-    <link rel="manifest" href="data:application/manifest+json;base64,ewogICJuYW1lIjogIkJpZGFuIFZpbmRhIFJ1c3BpdGEiLAogICJzaG9ydF9uYW1lIjogIkJpZGFuIFZpbmRhIiwKICAic3RhcnRfdXJsIjogIi4iLAogICJkaXNwbGF5IjogInN0YW5kYWxvbmUiLAogICJiYWNrZ3JvdW5kX2NvbG9yIjogIiNmZmYxZjIiLAogICJ0aGVtZV9jb2xvciI6ICIjZjQzZjVlIiwKICAiaWNvbnMiOiBbCiAgICB7CiAgICAgICJzcmMiOiAiaHR0cHM6Ly9jZG4taWNvbnMtcG5nLmZsYXRpY29uLmNvbS81MTIvMzEzNS8zMTM1NzE1LnBuZyIsCiAgICAgICJzaXplcyI6ICI1MTJ4NTEyIiwKICAgICAgInR5cGUiOiAiaW1hZ2UvcG5nIiwKICAgICAgInB1cnBvc2UiOiAiYW55IG1hc2thYmxlIigKICAgIH0KICBdCn0=">
-
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght=0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        brand: {
-                            50: '#fff1f2', 100: '#ffe4e6', 200: '#fecdd3', 300: '#fda4af',
-                            400: '#fb7185', 500: '#f43f5e', 600: '#e11d48', 700: '#be123c',
-                            800: '#9f1239', 900: '#881337',
-                        },
-                        tealbrand: {
-                            50: '#f0fdfa', 100: '#ccfbf1', 200: '#99f6e4', 300: '#5eead4',
-                            400: '#2dd4bf', 500: '#14b8a6', 600: '#0d9488', 700: '#0f766e',
-                        }
+                        brand: { 50: '#fff1f2', 100: '#ffe4e6', 200: '#fecdd3', 300: '#fda4af', 400: '#fb7185', 500: '#f43f5e', 600: '#e11d48', 700: '#be123c', 800: '#9f1239', 900: '#881337' },
+                        tealbrand: { 50: '#f0fdfa', 100: '#ccfbf1', 200: '#99f6e4', 300: '#5eead4', 400: '#2dd4bf', 500: '#14b8a6', 600: '#0d9488', 700: '#0f766e' }
                     },
-                    fontFamily: {
-                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
-                        serif: ['"Playfair Display"', 'serif'],
-                    }
+                    fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'], serif: ['"Playfair Display"', 'serif'] }
                 }
             }
         }
     </script>
     <style>
         .custom-gradient { background: linear-gradient(135deg, #fff1f2 0%, #f0fdfa 100%); }
-        .blob-bg {
-            background-image: radial-gradient(circle at 10% 20%, rgba(254, 205, 211, 0.4) 0%, transparent 45%),
-                              radial-gradient(circle at 90% 80%, rgba(153, 246, 228, 0.4) 0%, transparent 45%);
-        }
+        .blob-bg { background-image: radial-gradient(circle at 10% 20%, rgba(254, 205, 211, 0.4) 0%, transparent 45%), radial-gradient(circle at 90% 80%, rgba(153, 246, 228, 0.4) 0%, transparent 45%); }
     </style>
 </head>
 <body class="font-sans antialiased text-gray-800 blob-bg bg-rose-50/10">
-
-    <div id="pwa-install-banner" class="hidden bg-gradient-to-r from-brand-600 to-tealbrand-600 text-white text-center py-3 px-4 flex flex-col sm:flex-row items-center justify-center gap-3 z-[60] relative shadow-md">
-        <span class="text-sm font-medium"><i class="fa-solid fa-mobile-screen-button mr-2 animate-bounce"></i> Pasang aplikasi Bidan Vinda di HP Anda agar lebih mudah berobat & booking!</span>
-        <button id="btn-pwa-install" class="bg-white text-brand-600 hover:bg-rose-50 font-bold text-xs px-4 py-2 rounded-full transition shadow-sm">Instal Aplikasi</button>
-    </div>
-
-    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60 border-b border-rose-100/50">
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-rose-100/50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
                 <div class="flex items-center space-x-3">
-                    <div class="w-12 h-12 rounded-full bg-gradient-to-tr from-brand-400 to-tealbrand-400 flex items-center justify-center text-white shadow-md shadow-brand-100">
-                        <i class="fa-solid fa-baby-carriage text-xl"></i>
-                    </div>
+                    <div class="w-12 h-12 rounded-full bg-gradient-to-tr from-brand-400 to-tealbrand-400 flex items-center justify-center text-white shadow-md"><i class="fa-solid fa-baby-carriage text-xl"></i></div>
                     <div>
                         <span class="block text-lg font-bold text-gray-900 leading-tight">Bidan Vinda Ruspita</span>
                         <span class="block text-xs font-semibold text-tealbrand-600 tracking-wider uppercase">A.Md.Keb</span>
                     </div>
                 </div>
-
                 <nav class="hidden md:flex space-x-8 text-sm font-medium">
                     <a href="#beranda" class="text-brand-600 hover:text-brand-700 transition">Beranda</a>
                     <a href="#tentang" class="text-gray-600 hover:text-brand-600 transition">Tentang Kami</a>
@@ -77,82 +45,38 @@
                     <a href="#testimoni" class="text-gray-600 hover:text-brand-600 transition">Testimoni</a>
                     <a href="#lokasi" class="text-gray-600 hover:text-brand-600 transition">Alamat & Kontak</a>
                 </nav>
-
                 <div class="hidden md:block">
-                    <a href="#buat-janji" class="inline-flex items-center justify-center px-5 py-2.5 rounded-full text-sm font-semibold text-white bg-brand-500 hover:bg-brand-600 shadow-lg shadow-brand-200 transition duration-300">
-                        <i class="fa-solid fa-calendar-check mr-2"></i> Buat Janji Temu
-                    </a>
+                    <a href="#buat-janji" class="inline-flex items-center justify-center px-5 py-2.5 rounded-full text-sm font-semibold text-white bg-brand-500 hover:bg-brand-600 shadow-lg transition"><i class="fa-solid fa-calendar-check mr-2"></i> Buat Janji Temu</a>
                 </div>
-
                 <div class="md:hidden">
-                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-brand-600 p-2 focus:outline-none" aria-label="Menu Utama">
-                        <i class="fa-solid fa-bars text-2xl"></i>
-                    </button>
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-brand-600 p-2 focus:outline-none"><i class="fa-solid fa-bars text-2xl"></i></button>
                 </div>
             </div>
         </div>
-
         <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-rose-100 px-4 pt-2 pb-6 space-y-3 shadow-lg">
-            <a href="#beranda" class="block py-2 px-3 rounded-lg text-gray-700 hover:bg-brand-50 hover:text-brand-600 transition">Beranda</a>
-            <a href="#tentang" class="block py-2 px-3 rounded-lg text-gray-700 hover:bg-brand-50 hover:text-brand-600 transition">Tentang Kami</a>
-            <a href="#layanan" class="block py-2 px-3 rounded-lg text-gray-700 hover:bg-brand-50 hover:text-brand-600 transition">Layanan</a>
-            <a href="#testimoni" class="block py-2 px-3 rounded-lg text-gray-700 hover:bg-brand-50 hover:text-brand-600 transition">Testimoni</a>
-            <a href="#lokasi" class="block py-2 px-3 rounded-lg text-gray-700 hover:bg-brand-50 hover:text-brand-600 transition">Alamat & Kontak</a>
-            <div class="pt-2">
-                <a href="#buat-janji" class="w-full inline-flex items-center justify-center px-4 py-3 rounded-xl text-base font-semibold text-white bg-brand-500 hover:bg-brand-600 shadow-md">
-                    <i class="fa-solid fa-calendar-check mr-2"></i> Buat Janji Temu
-                </a>
-            </div>
+            <a href="#beranda" class="block py-2 px-3 rounded-lg text-gray-700 hover:bg-brand-50 transition">Beranda</a>
+            <a href="#tentang" class="block py-2 px-3 rounded-lg text-gray-700 hover:bg-brand-50 transition">Tentang Kami</a>
+            <a href="#layanan" class="block py-2 px-3 rounded-lg text-gray-700 hover:bg-brand-50 transition">Layanan</a>
+            <a href="#testimoni" class="block py-2 px-3 rounded-lg text-gray-700 hover:bg-brand-50 transition">Testimoni</a>
+            <a href="#lokasi" class="block py-2 px-3 rounded-lg text-gray-700 hover:bg-brand-50 transition">Alamat & Kontak</a>
         </div>
     </header>
-
     <section id="beranda" class="relative overflow-hidden pt-10 pb-20 lg:pt-16 lg:pb-28 custom-gradient">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                
                 <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
-                    <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-rose-100 text-brand-700 text-sm font-semibold tracking-wide">
-                        <i class="fa-solid fa-heart-pulse animate-pulse"></i>
-                        <span>Pelayanan Kebidanan Profesional & Humanis</span>
-                    </div>
-                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight">
-                        Sambut Buah Hati <span class="text-brand-500 font-serif italic font-normal">Tercinta</span> dengan Rasa Aman & Nyaman
-                    </h1>
-                    <p class="text-base sm:text-lg text-gray-600 max-w-xl mx-auto lg:mx-0">
-                        Selamat datang di tempat praktik <strong class="text-gray-900">Bidan Vinda Ruspita, A.Md.Keb</strong>. Kami berkomitmen memberikan asuhan kebidanan yang tulus, profesional, aman, dan berpusat pada kenyamanan Ibu dan Bayi di wilayah Magetan.
-                    </p>
+                    <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-rose-100 text-brand-700 text-sm font-semibold tracking-wide"><i class="fa-solid fa-heart-pulse animate-pulse"></i><span>Pelayanan Kebidanan Profesional & Humanis</span></div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight">Sambut Buah Hati <span class="text-brand-500 font-serif italic font-normal">Tercinta</span> dengan Rasa Aman & Nyaman</h1>
+                    <p class="text-base sm:text-lg text-gray-600 max-w-xl mx-auto lg:mx-0">Selamat datang di tempat praktik <strong class="text-gray-900">Bidan Vinda Ruspita, A.Md.Keb</strong>. Kami berkomitmen memberikan asuhan kebidanan yang tulus, profesional, aman, dan berpusat pada kenyamanan Ibu dan Bayi di wilayah Magetan.</p>
                     <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
-                        <a href="#buat-janji" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 rounded-full text-base font-bold text-white bg-brand-500 hover:bg-brand-600 shadow-xl shadow-brand-200 transition duration-300">
-                            <i class="fa-solid fa-calendar-days mr-2"></i> Jadwalkan Kunjungan
-                        </a>
-                        <a href="https://wa.me/6285856168566?text=Halo%20Bidan%20Vinda%2C%20saya%20ingin%20tanya%20mengenai%20layanan%20kebidanan." target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 rounded-full text-base font-bold text-tealbrand-700 bg-white border-2 border-tealbrand-200 hover:bg-tealbrand-50 transition duration-300">
-                            <i class="fa-brands fa-whatsapp text-xl mr-2 text-emerald-500"></i> Hubungi WhatsApp
-                        </a>
-                    </div>
-
-                    <div class="grid grid-cols-3 gap-4 pt-6 border-t border-rose-100/80 max-w-lg mx-auto lg:mx-0">
-                        <div class="text-center lg:text-left">
-                            <span class="block text-2xl font-extrabold text-brand-600">24 Jam</span>
-                            <span class="block text-xs text-gray-500 font-medium mt-0.5">Siaga Persalinan</span>
-                        </div>
-                        <div class="text-center lg:text-left border-x border-rose-100 px-2">
-                            <span class="block text-2xl font-extrabold text-brand-600">Berlisensi</span>
-                            <span class="block text-xs text-gray-500 font-medium mt-0.5">Amd.Keb Resmi</span>
-                        </div>
-                        <div class="text-center lg:text-left">
-                            <span class="block text-2xl font-extrabold text-brand-600">Nyaman</span>
-                            <span class="block text-xs text-gray-500 font-medium mt-0.5">Fasilitas Ramah Anak</span>
-                        </div>
+                        <a href="#buat-janji" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 rounded-full text-base font-bold text-white bg-brand-500 hover:bg-brand-600 shadow-xl transition"><i class="fa-solid fa-calendar-days mr-2"></i> Jadwalkan Kunjungan</a>
+                        <a href="https://wa.me/6285856168566?text=Halo%20Bidan%20Vinda%2C%20saya%20ingin%20tanya%20mengenai%20layanan%20kebidanan." target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 rounded-full text-base font-bold text-tealbrand-700 bg-white border-2 border-tealbrand-200 hover:bg-tealbrand-50 transition"><i class="fa-brands fa-whatsapp text-xl mr-2 text-emerald-500"></i> Hubungi WhatsApp</a>
                     </div>
                 </div>
-
                 <div class="lg:col-span-5 relative flex justify-center">
-                    <div class="relative w-72 sm:w-96 h-72 sm:h-96 rounded-3xl bg-gradient-to-tr from-rose-200/50 to-tealbrand-100/50 p-6 flex items-center justify-center shadow-2xl shadow-rose-200/50 border border-white">
+                    <div class="relative w-72 sm:w-96 h-72 sm:h-96 rounded-3xl bg-gradient-to-tr from-rose-200/50 to-tealbrand-100/50 p-6 flex items-center justify-center shadow-2xl border border-white">
                         <div class="bg-white rounded-2xl w-full h-full p-6 shadow-inner flex flex-col justify-between items-center text-center">
-                            <div class="w-full flex justify-between items-center text-rose-300">
-                                <i class="fa-solid fa-heart text-2xl"></i>
-                                <i class="fa-solid fa-sparkles text-xl text-yellow-400"></i>
-                            </div>
+                            <div class="w-full flex justify-between items-center text-rose-300"><i class="fa-solid fa-heart text-2xl"></i><i class="fa-solid fa-sparkles text-xl text-yellow-400"></i></div>
                             <svg class="w-48 h-48 text-brand-400" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="100" cy="100" r="80" fill="#FFF5F5"/>
                                 <path d="M100 40C80 40 65 55 65 75C65 110 100 145 100 145C100 145 135 110 135 75C135 55 120 40 100 40Z" fill="#FDA4AF" opacity="0.6"/>
@@ -167,100 +91,179 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
-
     <section id="tentang" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                 <div class="lg:col-span-5 space-y-4">
                     <div class="bg-gradient-to-br from-brand-50 to-rose-100 p-8 rounded-3xl border border-rose-100 relative">
-                        <div class="absolute top-4 right-4 bg-tealbrand-500 text-white font-bold text-xs px-3 py-1.5 rounded-full uppercase tracking-wider">
-                            Profil Bidan
-                        </div>
+                        <div class="absolute top-4 right-4 bg-tealbrand-500 text-white font-bold text-xs px-3 py-1.5 rounded-full uppercase tracking-wider">Profil Bidan</div>
                         <h3 class="font-serif text-3xl font-bold text-gray-900 mb-4">Vinda Ruspita, A.Md.Keb</h3>
-                        <p class="text-gray-600 leading-relaxed mb-6">
-                            Seorang praktisi kesehatan kebidanan berlisensi resmi dengan pengalaman luas dalam mendampingi para ibu melewati masa emas kehamilan, persalinan, hingga perawatan pasca melahirkan dan tumbuh kembang anak.
-                        </p>
-                        <div class="space-y-3">
-                            <div class="flex items-start space-x-3">
-                                <div class="mt-1 flex-shrink-0 w-6 h-6 rounded-full bg-tealbrand-100 flex items-center justify-center text-tealbrand-600">
-                                    <i class="fa-solid fa-check text-xs"></i>
-                                </div>
-                                <p class="text-sm text-gray-700 font-medium">Asuhan Sayang Ibu yang Lembut & Penuh Empati</p>
-                            </div>
-                            <div class="flex items-start space-x-3">
-                                <div class="mt-1 flex-shrink-0 w-6 h-6 rounded-full bg-tealbrand-100 flex items-center justify-center text-tealbrand-600">
-                                    <i class="fa-solid fa-check text-xs"></i>
-                                </div>
-                                <p class="text-sm text-gray-700 font-medium">Fasilitas Bersih, Steril, Nyaman dan Aman</p>
-                            </div>
-                            <div class="flex items-start space-x-3">
-                                <div class="mt-1 flex-shrink-0 w-6 h-6 rounded-full bg-tealbrand-100 flex items-center justify-center text-tealbrand-600">
-                                    <i class="fa-solid fa-check text-xs"></i>
-                                </div>
-                                <p class="text-sm text-gray-700 font-medium">Edukasi Lengkap Persiapan Persalinan & Menyusui</p>
-                            </div>
-                        </div>
+                        <p class="text-gray-600 leading-relaxed mb-6">Seorang praktisi kesehatan kebidanan berlisensi resmi dengan pengalaman luas dalam mendampingi para ibu melewati masa emas kehamilan, persalinan, hingga perawatan pasca melahirkan.</p>
                     </div>
                 </div>
-
                 <div class="lg:col-span-7 space-y-6">
                     <span class="text-xs font-extrabold text-brand-600 tracking-wider uppercase bg-rose-50 px-3 py-1 rounded-md">Visi & Nilai Praktik</span>
-                    <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 leading-tight">
-                        Mengutamakan Keselamatan, Kenyamanan, dan Kebahagiaan Ibu & Bayi
-                    </h2>
-                    <p class="text-gray-600 text-lg">
-                        Kami percaya bahwa setiap proses kelahiran adalah momen sakral dan unik. Melalui pendekatan yang ramah, asuhan holistik, dan edukasi berbasis bukti klinis terbaru, kami membimbing Anda menghadapi persalinan tanpa rasa cemas yang berlebihan.
-                    </p>
-                    
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4">
-                        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-md transition">
-                            <div class="w-10 h-10 rounded-xl bg-brand-100 text-brand-600 flex items-center justify-center mb-3">
-                                <i class="fa-solid fa-stethoscope text-lg"></i>
-                            </div>
-                            <h4 class="font-bold text-gray-900 mb-1">Pemeriksaan Rutin</h4>
-                            <p class="text-xs text-gray-500">Memonitor kesehatan ibu dan janin secara berkala guna mendeteksi dini risiko kehamilan.</p>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 leading-tight">Mengutamakan Keselamatan, Kenyamanan, dan Kebahagiaan Ibu & Bayi</h2>
+                    <p class="text-gray-600 text-lg">Kami percaya bahwa setiap proses kelahiran adalah momen sakral. Melalui pendekatan yang ramah, asuhan holistik, dan edukasi berbasis bukti klinis terbaru, kami membimbing Anda menghadapi persalinan tanpa rasa cemas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+        <section id="layanan" class="py-20 bg-rose-50/30 border-y border-rose-100/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16"><span class="text-xs font-extrabold text-tealbrand-600 tracking-wider uppercase bg-tealbrand-50 px-3 py-1 rounded-md">Layanan Utama</span><h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-2">Pelayanan Kebidanan Komprehensif</h2></div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-rose-100/30 flex flex-col justify-between group">
+                    <div class="space-y-4">
+                        <div class="w-14 h-14 rounded-2xl bg-rose-50 text-brand-500 flex items-center justify-center"><i class="fa-solid fa-hospital-user text-2xl"></i></div>
+                        <h3 class="text-xl font-bold text-gray-900">Pemeriksaan Kehamilan (ANC)</h3>
+                        <p class="text-gray-600 text-sm">Pemantauan kesehatan rutin selama masa kehamilan untuk memastikan janin sehat.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-rose-100/30 flex flex-col justify-between group">
+                    <div class="space-y-4">
+                        <div class="w-14 h-14 rounded-2xl bg-tealbrand-50 text-tealbrand-500 flex items-center justify-center"><i class="fa-solid fa-heart-pulse text-2xl"></i></div>
+                        <h3 class="text-xl font-bold text-gray-900">Pertolongan Persalinan 24 Jam</h3>
+                        <p class="text-gray-600 text-sm">Bantuan persalinan normal yang aman, bersih, didukung asuhan penuh kasih sayang.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-rose-100/30 flex flex-col justify-between group">
+                    <div class="space-y-4">
+                        <div class="w-14 h-14 rounded-2xl bg-rose-50 text-brand-500 flex items-center justify-center"><i class="fa-solid fa-syringe text-2xl"></i></div>
+                        <h3 class="text-xl font-bold text-gray-900">KB & Imunisasi Anak</h3>
+                        <p class="text-gray-600 text-sm">Konsultasi KB serta imunisasi lengkap untuk menjaga daya tahan tubuh buah hati Anda.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="buat-janji" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-br from-brand-500 to-rose-600 rounded-3xl shadow-2xl p-8 sm:p-12 text-white relative overflow-hidden">
+                <div class="relative z-10">
+                    <div class="text-center mb-10"><h2 class="text-3xl font-extrabold tracking-tight">Pendaftaran Janji Temu Online</h2><p class="text-rose-100 mt-2">Formulir ini otomatis menyusun pesan dan mengirimkannya ke WhatsApp resmi Bidan Vinda.</p></div>
+                    <form id="appointmentForm" class="space-y-6 text-gray-900">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div><label for="form_nama" class="block text-xs font-bold uppercase text-rose-100 mb-2">Nama Lengkap Pasien *</label><input type="text" id="form_nama" required class="w-full px-4 py-3 rounded-xl border-0 bg-white" placeholder="Ibu Rina Amalia"></div>
+                            <div><label for="form_phone" class="block text-xs font-bold uppercase text-rose-100 mb-2">Nomor HP / WhatsApp Aktif *</label><input type="tel" id="form_phone" required class="w-full px-4 py-3 rounded-xl border-0 bg-white" placeholder="081234xxxx"></div>
                         </div>
-                        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-md transition">
-                            <div class="w-10 h-10 rounded-xl bg-tealbrand-100 text-tealbrand-600 flex items-center justify-center mb-3">
-                                <i class="fa-solid fa-hand-holding-heart text-lg"></i>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div><label for="form_tanggal" class="block text-xs font-bold uppercase text-rose-100 mb-2">Rencana Tanggal *</label><input type="date" id="form_tanggal" required class="w-full px-4 py-3 rounded-xl border-0 bg-white"></div>
+                            <div>
+                                <label for="form_jam" class="block text-xs font-bold uppercase text-rose-100 mb-2">Perkiraan Jam *</label>
+                                <select id="form_jam" required class="w-full px-4 py-3 rounded-xl border-0 bg-white">
+                                    <option value="" disabled selected>Pilih Jam Kunjungan</option>
+                                    <option value="08:00 - 10:00 (Pagi)">08:00 - 10:00 (Pagi)</option>
+                                    <option value="15:00 - 17:00 (Sore)">15:00 - 17:00 (Sore)</option>
+                                    <option value="18:30 - 20:30 (Malam)">18:30 - 20:30 (Malam)</option>
+                                </select>
                             </div>
-                            <h4 class="font-bold text-gray-900 mb-1">Dukungan Laktasi</h4>
-                            <p class="text-xs text-gray-500">Bimbingan menyusui agar ASI eksklusif berjalan lancar sejak hari pertama buah hati lahir.</p>
+                        </div>
+                        <div>
+                            <label for="form_layanan" class="block text-xs font-bold uppercase text-rose-100 mb-2">Jenis Layanan *</label>
+                            <select id="form_layanan" required class="w-full px-4 py-3 rounded-xl border-0 bg-white">
+                                <option value="" disabled selected>Pilih Layanan</option>
+                                <option value="Pemeriksaan Kehamilan">Pemeriksaan Kehamilan</option>
+                                <option value="Persalinan / Melahirkan">Persalinan / Melahirkan</option>
+                                <option value="Pemasangan / Kontrol KB">Pemasangan / Kontrol KB</option>
+                            </select>
+                        </div>
+                        <div class="pt-4 text-center"><button type="submit" class="w-full sm:w-auto inline-flex items-center justify-center px-10 py-4 bg-tealbrand-600 hover:bg-tealbrand-700 text-white font-extrabold text-base rounded-full shadow-lg transition"><i class="fa-brands fa-whatsapp text-xl mr-3"></i> Kirim Form ke WhatsApp Bidan Vinda</button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="testimoni" class="py-20 bg-rose-50/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3"><span class="text-xs font-extrabold text-brand-600 tracking-wider uppercase bg-rose-50 px-3 py-1 rounded-md">Kata Mereka</span><h2 class="text-3xl font-extrabold text-gray-900">Ulasan & Testimoni Pasien</h2><p class="text-gray-600 text-sm">Cerita hangat dari para ibu hebat yang mempercayakan momen persalinan bersama Bidan Vinda Ruspita.</p></div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        <p class="text-gray-600 text-sm italic">"Sangat bersyukur bisa melahirkan anak pertama ditemani oleh Bidan Vinda. Orangnya sangat sabar, tenang, dan membimbing dengan kelembutan yang luar biasa."</p>
+                    </div>
+                    <div class="flex items-center space-x-3 pt-6 border-t border-gray-50 mt-6">
+                        <div class="w-10 h-10 rounded-full bg-brand-100 flex items-center justify-center text-brand-600 font-bold text-xs">IU</div>
+                        <div><h4 class="font-bold text-gray-900 text-sm">Ibu Utari</h4><span class="text-xs text-gray-500">Kec. Barat, Magetan</span></div>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        <p class="text-gray-600 text-sm italic">"Kemarin bawa bayi saya ke sini untuk baby spa dan imunisasi berkala. Bayi saya tidak rewel karena cara megang bayi sangat profesional."</p>
+                    </div>
+                    <div class="flex items-center space-x-3 pt-6 border-t border-gray-50 mt-6">
+                        <div class="w-10 h-10 rounded-full bg-tealbrand-100 flex items-center justify-center text-tealbrand-600 font-bold text-xs">ID</div>
+                        <div><h4 class="font-bold text-gray-900 text-sm">Ibu Dian Permata</h4><span class="text-xs text-gray-500">Manjung, Magetan</span></div>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        <p class="text-gray-600 text-sm italic">"Kontrol kehamilan berkala ke sini rasanya nyaman sekali. Setiap bertanya selalu dijawab dengan sabar. Terima kasih banyak, Bidan Vinda!"</p>
+                    </div>
+                    <div class="flex items-center space-x-3 pt-6 border-t border-gray-50 mt-6">
+                        <div class="w-10 h-10 rounded-full bg-brand-100 flex items-center justify-center text-brand-600 font-bold text-xs">IM</div>
+                        <div><h4 class="font-bold text-gray-900 text-sm">Ibu Maria</h4><span class="text-xs text-gray-500">Maospati, Magetan</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="lokasi" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                <div class="lg:col-span-5 space-y-8">
+                    <h2 class="text-3xl font-extrabold text-gray-900">Datang ke Praktik Kami</h2>
+                    <div class="space-y-4 text-sm text-gray-600">
+                        <p><strong>Alamat Lengkap:</strong><br>Jl. Melati 1, RT 01/RW 01, Desa Manjung, Kecamatan Barat, Kabupaten Magetan, Jawa Timur.</p>
+                        <p><strong>WhatsApp Resmi:</strong><br>0858-5616-8566</p>
+                        <p><strong>Jam Operasional:</strong><br>Kontrol: 08.00 - 20.00 WIB<br><span class="text-rose-500 font-bold">*Persalinan Darurat: Siaga 24 Jam</span></p>
+                    </div>
+                </div>
+                <div class="lg:col-span-7 h-80 relative rounded-3xl bg-slate-100 border overflow-hidden">
+                    <div class="absolute inset-0 bg-tealbrand-50/40 p-4 flex flex-col justify-between">
+                        <div class="bg-white rounded-xl p-3 shadow-sm flex justify-between items-center z-10 text-xs">
+                            <span class="font-bold text-gray-800"><i class="fa-solid fa-location-crosshairs mr-1 text-emerald-500"></i> Penunjuk Rute Aktif</span>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Jl.+Melati+1+Manjung+Kec+Barat+Kab+Magetan" target="_blank" class="bg-tealbrand-600 text-white px-3 py-1.5 rounded-lg font-bold">Buka Google Maps</a>
+                        </div>
+                        <div class="absolute inset-0 z-0">
+                            <svg class="w-full h-full text-slate-300" viewBox="0 0 500 500" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M 0,100 L 500,100 M 0,250 L 500,250 M 0,400 L 500,400" stroke="#CBD5E1" stroke-width="8" />
+                                <path d="M 120,0 L 120,500 M 280,0 L 280,500" stroke="#CBD5E1" stroke-width="8" />
+                                <g transform="translate(280, 250)">
+                                    <circle cx="0" cy="0" r="24" fill="#F43F5E" opacity="0.2"><animate attributeName="r" values="10;25;10" dur="2s" repeatCount="indefinite"/></circle>
+                                    <path d="M0 -15 C -8 -15, -10 -5, 0 5 C 10 -5, 8 -15, 0 -15" fill="#E11D48"/>
+                                    <circle cx="0" cy="-8" r="4" fill="#FFF"/>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="bg-white/95 rounded-2xl p-4 shadow-lg border border-rose-100 max-w-xs z-10 space-y-1 text-xs">
+                            <h3 class="font-bold text-gray-900">Bidan Vinda Ruspita</h3>
+                            <p class="text-gray-500">Jl. Melati 1, Manjung, Kec. Barat, Kab. Magetan.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <section id="layanan" class="py-20 bg-rose-50/30 border-y border-rose-100/50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
-                <span class="text-xs font-extrabold text-tealbrand-600 tracking-wider uppercase bg-tealbrand-50 px-3 py-1 rounded-md">Layanan Utama</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900">Pelayanan Kebidanan Komprehensif</h2>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white rounded-2xl p-6 shadow-sm border border-rose-100/30 flex flex-col justify-between group">
-                    <div class="space-y-4">
-                        <div class="w-14 h-14 rounded-2xl bg-rose-50 text-brand-500 flex items-center justify-center group-hover:scale-110 transition"><i class="fa-solid fa-hospital-user text-2xl"></i></div>
-                        <h3 class="text-xl font-bold text-gray-900">Pemeriksaan Kehamilan (ANC)</h3>
-                        <p class="text-gray-600 text-sm">Pemantauan kesehatan rutin selama masa kehamilan untuk memastikan perkembangan janin sehat.</p>
-                    </div>
-                </div>
-                <div class="bg-white rounded-2xl p-6 shadow-sm border border-rose-100/30 flex flex-col justify-between group">
-                    <div class="space-y-4">
-                        <div class="w-14 h-14 rounded-2xl bg-tealbrand-50 text-tealbrand-500 flex items-center justify-center group-hover:scale-110 transition"><i class="fa-solid fa-heart-pulse text-2xl"></i></div>
-                        <h3 class="text-xl font-bold text-gray-900">Pertolongan Persalinan 24 Jam</h3>
-                        <p class="text-gray-600 text-sm">Bantuan persalinan normal yang aman, bersih, didukung asuhan penuh kelembutan.</p>
-                    </div>
-                </div>
-                <div class="bg-white rounded-2xl p-6 shadow-sm border border-rose-100/30 flex flex-col justify-between group">
-                    <div class="space-y-4">
-                        <div class="w-14 h-14 rounded-2xl bg-rose-50 text-brand-500 flex items-center justify-center group-hover:scale-110 transition"><i class="fa-solid fa-syringe text-2xl"></i></div>
-                        <h3 class="text-xl font-bold text-gray-900">KB & Imunisasi Anak</h3>
-   
+    <footer class="bg-gray-900 text-gray-500 py-10 text-center text-xs"><p>© 2026 Praktik Mandiri Bidan Vinda Ruspita. Hak Cipta Dilindungi Undang-Undang.</p></footer>
+    <script>
+        document.getElementById('mobile-menu-btn').addEventListener('click', () => { document.getElementById('mobile-menu').classList.toggle('hidden'); });
+        document.getElementById('appointmentForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const nama = document.getElementById('form_nama').value;
+            const phone = document.getElementById('form_phone').value;
+            const tanggal = document.getElementById('form_tanggal').value;
+            const jam = document.getElementById('form_jam').value;
+            const layanan = document.getElementById('form_layanan').value;
+            const messageText = `Halo Bidan Vinda Ruspita, A.Md.Keb.\nSaya ingin mendaftar janji temu kunjungan.\n\nDetail Pendaftaran Pasien:\n• Nama: ${nama}\n• No WA Pasien: ${phone}\n• Tanggal Kunjungan: ${tanggal}\n• Perkiraan Jam: ${jam}\n• Jenis Layanan: ${layanan}\n\nMohon konfirmasi jadwal kunjungan saya ya, Bidan. Terima kasih.`;
+            window.open(`https://api.whatsapp.com/send?phone=6285856168566&text=${encodeURIComponent(messageText)}`, '_blank');
+        });
+    </script>
+</body>
+</html>
