@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bidan Vinda Ruspita, A.Md.Keb - Baby Homecare & RS DKT Madiun</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght=0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#fff1f2', 100: '#ffe4e6', 200: '#fecdd3', 300: '#fda4af',
+                            400: '#fb7185', 500: '#f43f5e', 600: '#e11d48', 700: '#be123c',
+                            800: '#9f1239', 900: '#881337',
+                        },
+                        tealbrand: {
+                            50: '#f0fdfa', 100: '#ccfbf1', 200: '#99f6e4', 300: '#5eead4',
+                            400: '#2dd4bf', 500: '#14b8a6', 600: '#0d9488', 700: '#0f766e',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .custom-gradient { background: linear-gradient(135deg, #fff1f2 0%, #f0fdfa 100%); }
+        .blob-bg {
+            background-image: radial-gradient(circle at 10% 20%, rgba(254, 205, 211, 0.4) 0%, transparent 45%),
+                              radial-gradient(circle at 90% 80%, rgba(153, 246, 228, 0.4) 0%, transparent 45%);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800 blob-bg bg-rose-50/10">
+
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-rose-100/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center space-x-3">
+                    <div class="w-12 h-12 rounded-full bg-gradient-to-tr from-brand-400 to-tealbrand-400 flex items-center justify-center text-white shadow-md">
+                        <i class="fa-solid fa-baby-carriage text-xl"></i>
+                    </div>
+                    <div>
+                        <span class="block text-lg font-bold text-gray-900 leading-tight">Bidan Vinda Ruspita</span>
+                        <span class="block text-xs font-semibold text-tealbrand-600 tracking-wider uppercase">A.Md.Keb</span>
+                    </div>
+                </div>
+
+                <nav class="hidden md:flex space-x-8 text-sm font-medium">
+                    <a href="#beranda" class="text-brand-600 hover:text-brand-700 transition">Beranda</a>
+                    <a href="#tentang" class="text-gray-600 hover:text-brand-600 transition">Profil & Instansi</a>
+                    <a href="#layanan" class="text-gray-600 hover:text-brand-600 transition">Baby Homecare</a>
+                    <a href="#buat-janji" class="text-gray-600 hover:text-brand-600 transition">Reservasi</a>
+                    <a href="#kontak" class="text-gray-600 hover:text-brand-600 transition">Kontak</a>
+                </nav>
+
+                <div class="hidden md:flex items-center space-x-3">
+                    <a href="https://www.facebook.com/share/1ERHbzamFH/" target="_blank" class="text-blue-600 text-xl hover:opacity-80"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/homecare_bidan_vinda/" target="_blank" class="text-pink-600 text-xl hover:opacity-80"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#buat-janji" class="inline-flex items-center justify-center px-4 py-2 rounded-full text-xs font-semibold text-white bg-brand-500 hover:bg-brand-600 shadow-md transition">
+                        Pesan Homecare
+                    </a>
+                </div>
+
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-brand-600 p-2 focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-rose-100 px-4 pt-2 pb-6 space-y-3 shadow-lg">
+            <a href="#beranda" class="block py-2 px-3 rounded-lg text-gray-700 hover:bg-brand-50 transition">Beranda</a>
+            <a href="#tentang" class="block py-2 px-3 rounded-lg text-gray-700 hover:bg-brand-50 transition">Profil & Instansi</a>
+            <a href="#layanan" class="block py-2 px-3 rounded-lg text-gray-700 hover:bg-brand-50 transition">Baby Homecare</a>
+            <a href="#buat-janji" class="block py-2 px-3 rounded-lg text-gray-700 hover:bg-brand-50 transition">Reservasi</a>
+            <a href="#kontak" class="block py-2 px-3 rounded-lg text-gray-700 hover:bg-brand-50 transition">Kontak</a>
+            <div class="pt-2 flex space-x-4 px-3">
+                <a href="https://www.facebook.com/share/1ERHbzamFH/" target="_blank" class="text-blue-600 text-2xl"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/homecare_bidan_vinda/" target="_blank" class="text-pink-600 text-2xl"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <section id="beranda" class="relative overflow-hidden pt-10 pb-20 lg:pt-16 lg:pb-28 custom-gradient">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-rose-100 text-brand-700 text-sm font-semibold tracking-wide">
+                        <i class="fa-solid fa-house-chimney-medical animate-pulse"></i>
+                        <span>Layanan Sampingan Resmi - Kunjungan Rumah Pasien</span>
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight">
+                        Layanan <span class="text-brand-500 font-serif italic font-normal">Baby Homecare</span> Profesional Langsung ke Rumah Anda
+                    </h1>
+                    <p class="text-base sm:text-lg text-gray-600 max-w-xl mx-auto lg:mx-0">
+                        Asuhan kasih sayang untuk buah hati tercinta oleh <strong class="text-gray-900">Bidan Vinda Ruspita, A.Md.Keb</strong>, praktisi kebidanan aktif di <span class="text-tealbrand-700 font-semibold">RS DKT Madiun</span>. Menghadirkan perawatan bayi bermutu tanpa perlu keluar rumah.
+                    </p>
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="#buat-janji" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 rounded-full text-base font-bold text-white bg-brand-500 hover:bg-brand-600 shadow-xl transition">
+                            <i class="fa-solid fa-calendar-days mr-2"></i> Booking Baby Homecare
+                        </a>
+                        <a href="https://wa.me/6285856168566?text=Halo%20Bidan%20Vinda%2C%20saya%20tertarik%20dengan%20layanan%20sampingan%20Baby%20Homecare%20Anda." target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 rounded-full text-base font-bold text-tealbrand-700 bg-white border-2 border-tealbrand-200 hover:bg-tealbrand-50 transition">
+                            <i class="fa-brands fa-whatsapp text-xl mr-2 text-emerald-500"></i> Konsultasi WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5 relative flex justify-center">
+                    <div class="relative w-72 sm:w-96 h-72 sm:h-96 rounded-3xl bg-gradient-to-tr from-rose-200/50 to-tealbrand-100/50 p-6 flex items-center justify-center shadow-2xl border border-white">
+                        <div class="bg-white rounded-2xl w-full h-full p-6 shadow-inner flex flex-col justify-between items-center text-center">
+                            <div class="w-full flex justify-between items-center text-rose-300">
+                                <i class="fa-solid fa-heart text-2xl"></i>
+                                <i class="fa-solid fa-sparkles text-xl text-yellow-400"></i>
+                            </div>
+                            <svg class="w-48 h-48 text-brand-400" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="100" cy="100" r="80" fill="#FFF5F5"/>
+                                <path d="M100 40C80 40 65 55 65 75C65 110 100 145 100 145C100 145 135 110 135 75C135 55 120 40 100 40Z" fill="#FDA4AF" opacity="0.6"/>
+                                <circle cx="100" cy="75" r="25" fill="#F43F5E"/>
+                                <path d="M85 110C85 110 90 95 100 95C110 95 115 110 115 110C115 110 110 115 100 115C90 115 85 110 85 110Z" fill="#14B8A6"/>
+                                <circle cx="100" cy="103" r="10" fill="#FFF"/>
+                            </svg>
+                            <div class="space-y-1">
+                                <span class="block text-sm font-bold text-gray-800">Bidan Vinda Ruspita, A.Md.Keb</span>
+                                <span class="block text-xs text-gray-500"><i class="fa-solid fa-user-nurse text-brand-500 mr-1"></i> Staff Aktif RS DKT Madiun</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tentang" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-5 space-y-4">
+                    <div class="bg-gradient-to-br from-brand-50 to-rose-100 p-8 rounded-3xl border border-rose-100 relative">
+                        <div class="absolute top-4 right-4 bg-tealbrand-500 text-white font-bold text-xs px-3 py-1.5 rounded-full uppercase tracking-wider">Instansi Kerja</div>
+                        <h3 class="font-serif text-2xl font-bold text-gray-900 mb-2">RS DKT Madiun</h3>
+                        <p class="text-sm text-gray-500 mb-4"><i class="fa-solid fa-map-pin text-rose-500 mr-1"></i> Jl. Pahlawan No.79, Kartoharjo, Kota Madiun, Jawa Timur 63121</p>
+                        <p class="text-gray-600 text-sm leading-relaxed">Bidan Vinda belum membuka tempat praktik mandiri secara resmi. Saat ini beliau aktif mendedikasikan waktu dan keahlian kebidanannya sebagai staf tenaga kesehatan di Rumah Sakit DKT Madiun.</p>
+                    </div>
+                </div>
+                <div class="lg:col-span-7 space-y-6">
+                    <span class="text-xs font-extrabold text-brand-600 tracking-wider uppercase bg-rose-50 px-3 py-1 rounded-md">Tentang Layanan Sampingan</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 leading-tight">Baby Homecare: Solusi Praktis Ibu Pintar</h2>
+                    <p class="text-gray-600 text-lg">Untuk membantu para Ibu di waktu senggang tugas kedinasan rumah sakit, Bidan Vinda menyediakan jasa kunjungan sampingan homecare khusus perawatan bayi baru lahir, spa bayi, serta edukasi pasca-salin langsung di rumah pasien.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="layanan" class="py-20 bg-rose-50/30 border-y border-rose-100/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-extrabold text-tealbrand-600 tracking-wider uppercase bg-tealbrand-50 px-3 py-1 rounded-md">Paket Homecare</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-2">Pilihan Perawatan Terlengkap</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-rose-100/30 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="w-14 h-14 rounded-2xl bg-rose-50 text-brand-500 flex items-center justify-center"><i class="fa-solid fa-baby text-2xl"></i></div>
+                        <h3 class="text-xl font-bold text-gray-900">Newborn Baby Care</h3>
+                        <p class="text-gray-600 text-sm">Mandikan bayi baru lahir, perawatan tali pusat yang higienis, serta teknik pijat stimulasi agar bayi tidur lebih nyenyak.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-rose-100/30 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="w-14 h-14 rounded-2xl bg-tealbrand-50 text-tealbrand-500 flex items-center justify-center"><i class="fa-solid fa-spa text-2xl"></i></div>
+                        <h3 class="text-xl font-bold text-gray-900">Baby Spa & Massage</h3>
+                        <p class="text-gray-600 text-sm">Pijat stimulasi tumbuh kembang ceria, meredakan kolik/kembung, serta mandi berendam hangat yang menenangkan motorik anak.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-rose-100/30 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="w-14 h-14 rounded-2xl bg-rose-50 text-brand-500 flex items-center justify-center"><i class="fa-solid fa-person-breastfeeding text-2xl"></i></div>
+                        <h3 class="text-xl font-bold text-gray-900">Edukasi & Perawatan Ibu</h3>
+                        <p class="text-gray-600 text-sm">Pendampingan pijat laktasi melancarkan ASI, perawatan luka pasca melahirkan, dan konseling menyusui yang nyaman.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="buat-janji" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-br from-brand-500 to-rose-600 rounded-3xl shadow-2xl p-8 sm:p-12 text-white relative overflow-hidden">
+                <div class="relative z-10">
+                    <div class="text-center mb-10">
+                        <h2 class="text-3xl font-extrabold tracking-tight">Booking Kunjungan Homecare</h2>
+                        <p class="text-rose-100 mt-2">Karena Bidan Vinda bekerja aktif di RS DKT Madiun, jadwal homecare akan disesuaikan dengan waktu luang dinas beliau.</p>
+                    </div>
+                    <form id="appointmentForm" class="space-y-6 text-gray-900">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label for="form_nama" class="block text-xs font-bold uppercase text-rose-100 mb-2">Nama Lengkap Ibu *</label>
+                                <input type="text" id="form_nama" required class="w-full px-4 py-3 rounded-xl border-0 bg-white" placeholder="Ibu Amalia">
+                            </div>
+                            <div>
+                                <label for="form_phone" class="block text-xs font-bold uppercase text-rose-100 mb-2">Nomor WhatsApp Aktif *</label>
+                                <input type="tel" id="form_phone" required class="w-full px-4 py-3 rounded-xl border-0 bg-white" placeholder="081234xxxx">
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label for="form_tanggal" class="block text-xs font-bold uppercase text-rose-100 mb-2">Rencana Tanggal Kunjungan *</label>
+                                <input type="date" id="form_tanggal" required class="w-full px-4 py-3 rounded-xl border-0 bg-white">
+                            </div>
+                            <div>
+                                <label for="form_layanan" class="block text-xs font-bold uppercase text-rose-100 mb-2">Paket Layanan Homecare *</label>
+                                <select id="form_layanan" required class="w-full px-4 py-3 rounded-xl border-0 bg-white">
+                                    <option value="" disabled selected>Pilih Layanan</option>
